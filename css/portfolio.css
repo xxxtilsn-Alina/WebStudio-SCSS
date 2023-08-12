@@ -1,0 +1,233 @@
+.container {
+  display: flex;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.headr-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-link {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.header-link:hover {
+  color: #2196f3;
+  transition: 0.7s;
+}
+
+.logo {
+  margin-right: 93px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.header-contact {
+  display: flex;
+}
+
+.gmail {
+  padding-left: 314px;
+  font-family: Roboto;
+  padding-right: 50px;
+  color: #2196f3;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.contact {
+  color: #757575;
+  font-size: 14px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.logo-one {
+  color: #2196f3;
+  font-size: 26px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+/* button */
+
+.button {
+  padding-top: 94px;
+}
+
+.button-list {
+  display: flex;
+  gap: 8px;
+}
+
+.button-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  border-radius: 4px;
+  background: #f5f4fa;
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.48px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.btn:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+  transition: 0.7s;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* project */
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  column-gap: 30px;
+  gap: 27px;
+}
+
+.project-container {
+  margin-top: 50px;
+}
+
+.catalog-text {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 200% */
+  letter-spacing: 1.08px;
+  padding-top: 20px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+}
+
+.catalog-tytle {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.48px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+
+.project-item {
+  border: 1px solid #eee;
+}
+
+/* fotter */
+
+footer {
+  background: #2f303a;
+  margin-top: 94px;
+}
+
+.foother-logo {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  margin-bottom: 20px;
+  padding-top: 60px;
+}
+
+.foother-logo-one {
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.foother-address {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  margin-bottom: 9px;
+}
+
+.gmails {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+
+.nomer {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+
+.foother-contact {
+  margin-bottom: 9px;
+}
+
+.foother-contacts {
+  margin-bottom: 0px;
+}

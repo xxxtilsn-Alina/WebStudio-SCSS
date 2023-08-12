@@ -1,0 +1,310 @@
+.container {
+  display: flex;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.headr-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-link {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.header-link:hover {
+  color: #2196f3;
+  transition: 0.7s;
+}
+
+.logo {
+  margin-right: 93px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.header-contact {
+  display: flex;
+}
+
+.gmail {
+  padding-left: 314px;
+  font-family: Roboto;
+  padding-right: 50px;
+  color: #2196f3;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.contact {
+  color: #757575;
+  font-size: 14px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.logo-one {
+  color: #2196f3;
+  font-size: 26px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.biznes {
+  background-color: #2f303a;
+}
+
+.biznes-up {
+  padding-top: 200px;
+  font-family: Roboto;
+  color: #fff;
+  text-align: center;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px; /* 136.364% */
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.button-biznes {
+  width: 216px;
+  height: 50px;
+  font-family: Roboto;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 200px;
+}
+
+.button-text {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+}
+
+.biznes-container {
+  max-width: 628px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Choosing-Us {
+  margin-top: 94px;
+}
+
+.Choosing-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Choosing-text {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+
+.Choosing-hero {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+/* work */
+
+.work {
+  padding-top: 118px;
+}
+
+.work-title {
+  color: #212121;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+
+.img-work {
+  margin-bottom: 94px;
+}
+
+/* team */
+
+.team {
+  background: #f5f4fa;
+  padding-bottom: 94px;
+}
+
+.team-title {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team-text {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-bottom: 10px;
+}
+
+.team-work {
+  color: #757575;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-bottom: 30px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-photo {
+  margin-bottom: 30px;
+}
+
+.team-item {
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+footer {
+  background: #2f303a;
+}
+
+.foother-logo {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  margin-bottom: 20px;
+  padding-top: 60px;
+}
+
+.foother-logo-one {
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.foother-address {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  margin-bottom: 9px;
+}
+
+.gmails {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+
+.nomer {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+
+.foother-contact {
+  margin-bottom: 9px;
+}
+
+.foother-contacts {
+  margin-bottom: 0px;
+}
