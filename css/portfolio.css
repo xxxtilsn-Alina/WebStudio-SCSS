@@ -1,13 +1,23 @@
-.container {
+body {
+  font-family: Roboto;
+}
+
+.header-container {
   display: flex;
-  width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.container {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .headr-list {
@@ -18,9 +28,7 @@
 
 .header-link {
   color: #212121;
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
@@ -36,7 +44,6 @@
   color: #000;
   font-family: Raleway;
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
@@ -48,11 +55,9 @@
 
 .gmail {
   padding-left: 314px;
-  font-family: Roboto;
   padding-right: 50px;
   color: #2196f3;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
@@ -61,8 +66,6 @@
 .contact {
   color: #757575;
   font-size: 14px;
-  font-style: normal;
-  font-family: Roboto;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
@@ -72,7 +75,6 @@
   color: #2196f3;
   font-size: 26px;
   font-family: Raleway;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
@@ -99,9 +101,7 @@
   background: #f5f4fa;
   color: #212121;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 26px; /* 162.5% */
   letter-spacing: 0.48px;
@@ -122,24 +122,22 @@
 
 /* project */
 
+.project {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  column-gap: 30px;
-  gap: 27px;
-}
-
-.project-container {
-  margin-top: 50px;
+  gap: 30px;
 }
 
 .catalog-text {
   color: #212121;
-  font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px; /* 200% */
   letter-spacing: 1.08px;
@@ -150,44 +148,40 @@
 
 .catalog-tytle {
   color: #757575;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
   padding-left: 24px;
-  padding-bottom: 20px;
 }
 
 .project-item {
   border: 1px solid #eee;
+  padding-bottom: 20px;
 }
 
 /* fotter */
 
 footer {
   background: #2f303a;
-  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .foother-logo {
   color: #fff;
   font-family: Raleway;
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
   margin-bottom: 20px;
-  padding-top: 60px;
 }
 
 .foother-logo-one {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
@@ -195,9 +189,7 @@ footer {
 
 .foother-address {
   color: #fff;
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
@@ -206,9 +198,7 @@ footer {
 
 .gmails {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
@@ -216,9 +206,7 @@ footer {
 
 .nomer {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
@@ -226,8 +214,4 @@ footer {
 
 .foother-contact {
   margin-bottom: 9px;
-}
-
-.foother-contacts {
-  margin-bottom: 0px;
 }
