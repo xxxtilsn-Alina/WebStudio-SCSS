@@ -122,6 +122,8 @@ body {
   margin-right: auto;
 }
 
+/* Choosing-Us */
+
 .choosing {
   padding-top: 94px;
 }
@@ -132,11 +134,68 @@ body {
   gap: 30px;
 }
 
+.choosing-item {
+  width: 270px;
+  height: 248px;
+}
+
+.choosing-item-antenna::before {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  background-image: url(../img/choosing.icon.antenna.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.choosing-item-clock::before {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  background-image: url(../img/choosing.icon.clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.choosing-item-diagramma::before {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  background-image: url(../img/choosing.icon.diagramma.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.choosing-item-astronaut::before {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  background-image: url(../img/choosing.icon.astronaut.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .choosing-text {
   color: #757575;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
   letter-spacing: 0.42px;
 }
 
@@ -144,7 +203,6 @@ body {
   color: #212121;
   font-size: 14px;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
