@@ -82,10 +82,9 @@ body {
 /* biznes */
 
 .biznes {
-  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(/img/img.biznes/biznes.fon.webp);
+  background-image: url(../img/img.biznes/biznes.fon.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
