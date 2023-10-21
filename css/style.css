@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
@@ -24,6 +24,7 @@ body {
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-right: auto;
 }
 
 .header-link {
@@ -49,12 +50,11 @@ body {
   letter-spacing: 0.78px;
 }
 
-.header-contact {
+.header-information {
   display: flex;
 }
 
 .gmail {
-  margin-left: 344px;
   margin-right: 50px;
   color: #2196f3;
   font-size: 14px;
@@ -67,7 +67,6 @@ body {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 0.28px;
 }
 
@@ -109,9 +108,6 @@ body {
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-.button-text {
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -285,7 +281,6 @@ body {
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
-  /* material shadow v1 */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }

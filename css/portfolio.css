@@ -12,18 +12,20 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
   margin-right: auto;
   margin-left: auto;
+  outline: solid red;
 }
 
 .headr-list {
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-right: auto;
 }
 
 .header-link {
@@ -54,7 +56,6 @@ body {
 }
 
 .gmail {
-  margin-left: 344px;
   margin-right: 50px;
   color: #2196f3;
   font-size: 14px;
@@ -131,7 +132,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
   gap: 30px;
 }
 
@@ -139,7 +139,7 @@ body {
   color: #212121;
   font-size: 18px;
   font-weight: 700;
-  line-height: 36px; /* 200% */
+  line-height: 36px;
   letter-spacing: 1.08px;
   padding-top: 20px;
   margin-bottom: 4px;
@@ -150,15 +150,15 @@ body {
   color: #757575;
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px; /* 187.5% */
+  line-height: 30px;
   letter-spacing: 0.48px;
   padding-left: 24px;
 }
 
 .project-item {
   border: 1px solid #eee;
-  padding-bottom: 20px;
   max-width: 370px;
+  padding-bottom: 20px;
 }
 
 /* fotter */
