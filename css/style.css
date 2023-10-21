@@ -80,10 +80,15 @@ body {
   letter-spacing: 0.78px;
 }
 
+/* biznes */
+
 .biznes {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(/img/img.biznes/biznes.fon.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .biznes-up {
@@ -147,7 +152,7 @@ body {
   display: block;
   content: "";
   margin-bottom: 30px;
-  background-image: url(../img/choosing.icon.antenna.png);
+  background-image: url(../img/img.choosing.us/choosing.us.antenna.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -160,7 +165,7 @@ body {
   display: block;
   content: "";
   margin-bottom: 30px;
-  background-image: url(../img/choosing.icon.clock.png);
+  background-image: url(../img/img.choosing.us/choosing.us.clock.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -173,7 +178,7 @@ body {
   display: block;
   content: "";
   margin-bottom: 30px;
-  background-image: url(../img/choosing.icon.diagramma.png);
+  background-image: url(../img/img.choosing.us/choosing.us.diagram.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -186,7 +191,7 @@ body {
   display: block;
   content: "";
   margin-bottom: 30px;
-  background-image: url(../img/choosing.icon.astronaut.png);
+  background-image: url(../img/img.choosing.us/choosing.us.astronaut.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
