@@ -11,6 +11,10 @@ body {
   padding-bottom: 24px;
 }
 
+.box-shadov {
+  box-shadow: -1px 6px 0px -5px rgba(236, 236, 236, 1);
+}
+
 .container {
   max-width: 1170px;
   display: flex;
