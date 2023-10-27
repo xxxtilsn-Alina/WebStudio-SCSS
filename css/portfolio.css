@@ -199,7 +199,8 @@ footer {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  font-style: normal;
+  line-height: 24px;
   letter-spacing: 0.42px;
   margin-bottom: 9px;
 }
@@ -208,7 +209,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
   letter-spacing: 0.42px;
 }
 
@@ -216,7 +217,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
   letter-spacing: 0.42px;
 }
 
