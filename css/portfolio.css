@@ -41,6 +41,10 @@ body {
   color: #2196f3;
   transition: 0.7s;
 }
+.header-link:focus {
+  color: #2196f3;
+  outline: none;
+}
 
 .logo {
   margin-right: 93px;
@@ -71,6 +75,89 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+}
+
+.logo-one {
+  color: #2196f3;
+  font-size: 26px;
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.gmail-tittle {
+  margin-right: 50px;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.gmail-icon {
+  fill: #757575;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.gmail:hover .gmail-tittle {
+  color: #2196f3;
+  transition: 0.3s;
+}
+
+.gmail:focus .gmail-tittle {
+  color: #2196f3;
+}
+
+.gmail:focus {
+  outline: none;
+}
+
+.gmail:hover .icon-gmail {
+  fill: #2196f3;
+  transition: 0.3s;
+}
+
+.gmail:focus .icon-gmail {
+  fill: #2196f3;
+}
+.contact {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  display: flex;
+  align-items: center;
+}
+
+.contact:hover .contact-icon {
+  fill: #2196f3;
+  transition: 0.3s;
+}
+
+.contact:focus .contact-icon {
+  fill: #2196f3;
+}
+
+.contact:focus {
+  outline: none;
+}
+
+.contact:hover .gmail-tittle {
+  color: #2196f3;
+  transition: 0.3s;
+}
+
+.contact:focus .gmail-tittle {
+  color: #2196f3;
+}
+
+.contact-icon {
+  fill: #757575;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .logo-one {
@@ -122,6 +209,16 @@ body {
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.btn:focus {
+  outline: none;
+  background-color: #2196f3;
+  color: #ffffff;
+  transition: 0.7s;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
 /* project */
 
 .project {
@@ -156,15 +253,22 @@ body {
   padding-left: 24px;
 }
 
-.project-item {
+.project-item-link {
+  display: block;
   border: 1px solid #eee;
   max-width: 370px;
   padding-bottom: 20px;
   flex-basis: calc(100% - 240px / 9);
 }
 
-.project-item:hover {
+.project-item-link:hover {
   transition: 0.5s;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.project-item-link:focus {
+  outline: none;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
