@@ -22,13 +22,15 @@
           <h1 class="logo"><span class="logo-one">Web</span>Studio</h1>
           <ul class="headr-list">
             <li class="header-item">
-              <a href="./index.html" class="header-link">Студія</a>
+              <a href="./index.html" class="header-link link-studio">Студія</a>
             </li>
             <li class="header-item">
-              <a href="./portfolio.html" class="header-link">Портфоліо</a>
+              <a href="./portfolio.html" class="header-link link-portfolio"
+                >Портфоліо</a
+              >
             </li>
             <li class="header-item">
-              <a href="" class="header-link">Контакти</a>
+              <a href="" class="header-link link-contact">Контакти</a>
             </li>
           </ul>
           <ul class="header-information">
@@ -487,7 +489,7 @@
         </div>
       </div>
     </footer>
-    <div data-modal class="backdrop">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <form action="">
           <h2 class="modal-tittle">Залиште свої дані, ми вам передзвонимо</h2>
@@ -534,6 +536,7 @@
             <input
               class="modal-input-com"
               type="text"
+              required
               placeholder="Введіть текст"
             />
           </label>
