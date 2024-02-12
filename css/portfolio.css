@@ -36,11 +36,11 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover {
   color: #2196f3;
-  transition: 0.7s;
 }
 
 .header-link:focus {
@@ -58,6 +58,7 @@ body {
   position: absolute;
   bottom: -28px;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-portfolio::after {
@@ -70,6 +71,7 @@ body {
   position: absolute;
   bottom: -28px;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contact::after {
@@ -82,11 +84,18 @@ body {
   position: absolute;
   bottom: -28px;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover::after {
+.link-portfolio:hover::after {
   opacity: 1;
-  transition: 0.7s;
+}
+
+.link-studio:hover::after {
+  opacity: 1;
+}
+.link-contact:hover::after {
+  opacity: 1;
 }
 
 .logo {
@@ -143,6 +152,7 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gmail-icon {
@@ -150,11 +160,11 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gmail:hover .gmail-tittle {
   color: #2196f3;
-  transition: 0.3s;
 }
 
 .gmail:focus .gmail-tittle {
@@ -167,7 +177,6 @@ body {
 
 .gmail:hover .icon-gmail {
   fill: #2196f3;
-  transition: 0.3s;
 }
 
 .gmail:focus .icon-gmail {
@@ -176,7 +185,6 @@ body {
 
 .contact:hover .contact-icon {
   fill: #2196f3;
-  transition: 0.3s;
 }
 
 .contact:focus .contact-icon {
@@ -189,7 +197,6 @@ body {
 
 .contact:hover .gmail-tittle {
   color: #2196f3;
-  transition: 0.3s;
 }
 
 .contact:focus .gmail-tittle {
@@ -201,6 +208,7 @@ body {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-one {
@@ -241,12 +249,15 @@ body {
   padding-right: 23px;
   padding-top: 6px;
   padding-bottom: 6px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover {
   background-color: #2196f3;
   color: #ffffff;
-  transition: 0.7s;
   border-radius: 4px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -256,7 +267,6 @@ body {
   outline: none;
   background-color: #2196f3;
   color: #ffffff;
-  transition: 0.7s;
   border-radius: 4px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -302,10 +312,10 @@ body {
   max-width: 370px;
   padding-bottom: 20px;
   flex-basis: calc(100% - 240px / 9);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item-link:hover {
-  transition: 0.5s;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
@@ -338,6 +348,7 @@ body {
   right: 0;
   bottom: 0;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item {
@@ -346,7 +357,6 @@ body {
 
 .project-item:hover .box-overley {
   opacity: 1;
-  transition: 0.7s;
 }
 
 /* fotter */
@@ -435,6 +445,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons {
@@ -445,7 +456,6 @@ footer {
 
 .footer-icon-link:hover {
   background-color: #2196f3;
-  transition: 0.5s;
 }
 
 .footer-icon-link:focus {
@@ -506,6 +516,11 @@ footer {
   align-items: center;
   gap: 10px;
   justify-content: center;
+  transition: background-color 300ms cubic-bezier(1, -1.07, 0.35, 0.38);
+}
+
+.footer-button-email:hover {
+  background-color: #0f68b1;
 }
 
 .footer-icon-svg {
