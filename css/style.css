@@ -238,7 +238,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-biznes:hover {
@@ -811,16 +811,15 @@ footer {
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-bottom: 10px;
   position: relative;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-lable-text:hover .modal-input {
   border: 1px solid #2196f3;
-  transition: 0.3s;
 }
 
 .modal-lable-text:hover .modal-icons {
   fill: #2196f3;
-  transition: 0.3s;
 }
 
 .modal-input-com {
@@ -834,7 +833,6 @@ footer {
 
 .modal-input-com:hover {
   border: 1px solid #2196f3;
-  transition: 0.3s;
 }
 
 .modal-icons {
@@ -843,6 +841,7 @@ footer {
   position: absolute;
   bottom: 20px;
   left: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
@@ -907,6 +906,10 @@ footer {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover {
+  background-color: #1463a3;
 }
 
 .is-hidden {
