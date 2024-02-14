@@ -568,7 +568,7 @@ footer {
 
 .foother-address {
   color: #fff;
-  font-size: 13px;
+  font-size: 13 px;
   font-weight: 400;
   line-height: 24px;
   font-style: normal;
@@ -723,8 +723,9 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(360deg);
   padding: 40px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -734,6 +735,12 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden .modal {
+  transform: translate(0);
 }
 
 .modal-tittle {
@@ -888,4 +895,5 @@ footer {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
