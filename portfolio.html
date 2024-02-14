@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Портфоліо</title>
   </head>
   <body>
@@ -69,7 +70,11 @@
       <section class="button">
         <div class="container">
           <div class="button-container">
-            <ul class="button-list">
+            <ul
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              class="button-list"
+            >
               <li class="button-item">
                 <button class="btn" type="button">Усі</button>
               </li>
@@ -261,7 +266,7 @@
     </main>
     <!-- fotter -->
     <footer class="footer">
-      <div class="container">
+      <div data-aos="fade-left" data-aos-duration="2000" class="container">
         <div class="footer-container">
           <h2 class="foother-logo">
             <span class="foother-logo-one">Web</span>Studio
@@ -344,5 +349,9 @@
         </form>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

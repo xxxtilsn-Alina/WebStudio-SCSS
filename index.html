@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -65,7 +66,13 @@
       <section class="biznes">
         <div class="container">
           <div class="biznes-container">
-            <h1 class="biznes-up">Ефективні рішення для вашого бізнесу</h1>
+            <h1
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              class="biznes-up"
+            >
+              Ефективні рішення для вашого бізнесу
+            </h1>
             <button data-modal-open type="button" class="button-biznes">
               Замовити послугу
             </button>
@@ -113,8 +120,10 @@
       <section class="work">
         <div class="container">
           <div class="work-container">
-            <h2 class="work-title">Чим ми займаємося</h2>
-            <ul class="work-list">
+            <h2 data-aos="zoom-in" data-aos-duration="3000" class="work-title">
+              Чим ми займаємося
+            </h2>
+            <ul data-aos="zoom-in" data-aos-duration="3000" class="work-list">
               <li class="work-item">
                 <img
                   class="work-img"
@@ -153,8 +162,14 @@
       <section class="team">
         <div class="container">
           <div class="team-container">
-            <h2 class="team-title">Наша команда</h2>
-            <ul class="team-list">
+            <h2
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              class="team-title"
+            >
+              Наша команда
+            </h2>
+            <ul data-aos="fade-left" data-aos-duration="3000" class="team-list">
               <li class="team-item">
                 <img
                   src="./img/img.team/team-desinger.webp"
@@ -323,7 +338,13 @@
       <section class="clients">
         <div class="container">
           <div class="clients-container">
-            <h2 class="clients-tittle">Постійні клієнти</h2>
+            <h2
+              data-aos="flip-up"
+              data-aos-duration="1500"
+              class="clients-tittle"
+            >
+              Постійні клієнти
+            </h2>
             <ul class="clients-list">
               <li class="clients-item">
                 <a href="" class="clients-icon-link">
@@ -392,7 +413,7 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
+      <div data-aos="fade-left" data-aos-duration="3000" class="container">
         <div class="footer-container">
           <div class="footer-adress-wrapper">
             <h2 class="foother-logo">
@@ -547,5 +568,9 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
