@@ -114,6 +114,8 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+  animation-name: logo-mowe;
+  animation-duration: 3s;
 }
 
 .header-information {
@@ -209,6 +211,17 @@ body {
   letter-spacing: 0.78px;
 }
 
+@keyframes logo-mowe {
+  0% {
+    transform: translate(-500px, 0) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
 /* biznes */
 
 .biznes {
@@ -233,6 +246,22 @@ body {
   letter-spacing: 2.64px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  animation-name: biznes-up-mowe;
+  animation-duration: 3s;
+}
+
+@keyframes biznes-up-mowe {
+  0% {
+    transform: translate(-1200px, 0) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    text-shadow: 30px -15px 3px rgb(95, 155, 83);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
 }
 
 .button-biznes {
@@ -277,6 +306,17 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
+  animation-name: choosing-mowe;
+  animation-duration: 3s;
+}
+
+@keyframes choosing-mowe {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .choosing-item {
