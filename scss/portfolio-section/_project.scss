@@ -9,7 +9,7 @@
     gap: 30px;
   }
 
-  &__catalog-text {
+  &__text {
     color: $text-color;
     font-size: 18px;
     font-weight: 700;
@@ -20,7 +20,7 @@
     padding-left: 24px;
   }
 
-  &__catalog-tytle {
+  &__title {
     color: $gmail-text;
     font-size: 16px;
     font-weight: 400;
@@ -29,27 +29,27 @@
     padding-left: 24px;
   }
 
-  &__item-link {
+  &__link {
     display: block;
-    border: 1px solid #eee;
+    border: 1px solid $tittle-color;
     max-width: 370px;
     padding-bottom: 20px;
     flex-basis: calc(100% - 240px / 9);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      box-shadow: 1px 4px 6px 0px $infrequent-color,
+        0px 4px 4px 0px $unwonted-color, 0px 1px 1px 0px $rare-color;
     }
 
     &:focus {
       outline: none;
-      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      box-shadow: 1px 4px 6px 0px $infrequent-color,
+        0px 4px 4px 0px $unwonted-color, 0px 1px 1px 0px $rare-color;
     }
   }
 
-  &__text-overley {
+  &__information {
     width: 325px;
     color: $tittle-color;
     font-size: 18px;
@@ -60,7 +60,7 @@
     padding-left: 24px;
   }
 
-  &__box-overley {
+  &__overley {
     width: 370px;
     height: 294px;
     background-color: $overley-fon;
@@ -79,7 +79,7 @@
   &__item {
     position: relative;
 
-    &:hover .project__box-overley {
+    &:hover .project__overley {
       opacity: 1;
       transform: translatey(0);
     }

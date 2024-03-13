@@ -16,7 +16,7 @@
   }
 
   &__link {
-    color: #212121;
+    color: $text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -122,7 +122,7 @@
     align-items: center;
   }
 
-  &__gmail-icon {
+  &__icon {
     fill: $gmail-text;
     width: 16px;
     height: 12px;
@@ -130,7 +130,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__gmail-item {
+  &__item {
     display: flex;
     align-items: center;
 
@@ -146,16 +146,16 @@
       outline: none;
     }
 
-    &:hover .header__gmail-icon {
+    &:hover .header__icon {
       fill: $hover-text;
     }
 
-    &:focus .header__gmail-icon {
+    &:focus .header__icon {
       fill: $hover-text;
     }
   }
 
-  &__link__contact {
+  &__tel {
     color: $gmail-text;
     font-size: 14px;
     font-weight: 500;
@@ -163,11 +163,11 @@
     display: flex;
     align-items: center;
 
-    &:hover .header__contact__icon {
+    &:hover .header__telephone {
       fill: $hover-text;
     }
 
-    &:focus .header__contact__icon {
+    &:focus .header__telephone {
       fill: $hover-text;
     }
 
@@ -184,7 +184,7 @@
     }
   }
 
-  &__contact__icon {
+  &__telephone {
     fill: $gmail-text;
     width: 10px;
     height: 16px;
@@ -192,7 +192,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__logo-one {
+  &__logs {
     color: $hover-text;
     font-size: 26px;
     font-family: Raleway;

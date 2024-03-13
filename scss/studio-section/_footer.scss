@@ -13,7 +13,7 @@
     margin-bottom: 20px;
   }
 
-  &__logo-one {
+  &__logs {
     color: $hover-text;
     font-family: Raleway;
     font-size: 26px;
@@ -57,13 +57,13 @@
     margin-bottom: 9px;
   }
 
-  &__icons-container {
+  &__burnt {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
   }
 
-  &__tittle-project {
+  &__project {
     color: $tittle-color;
     font-size: 14px;
     font-style: normal;
@@ -74,12 +74,12 @@
     margin-bottom: 20px;
   }
 
-  &__icon-list {
+  &__information {
     display: flex;
     gap: 10px;
   }
 
-  &__icon-link {
+  &__link {
     padding: 12px;
     fill: $footer-icon-color;
     border-radius: 50px;
@@ -104,13 +104,13 @@
     fill: $tittle-color;
   }
 
-  &__input-lable {
+  &__lable {
     display: flex;
     gap: 12px;
     margin-left: 93px;
   }
 
-  &__input-tittle {
+  &__tittle {
     color: $tittle-color;
     font-size: 14px;
     font-weight: 700;
@@ -127,7 +127,7 @@
     border-radius: 4px;
     border: 1px solid $footer-border;
     background: $footer-input;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px 0px $uncommon-color;
     position: relative;
 
     &::placeholder {
@@ -141,12 +141,12 @@
     }
   }
 
-  &__button-email {
+  &__button {
     width: 200px;
     height: 50px;
     border-radius: 4px;
     background: $hover-text;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px 0px $uncommon-color;
     color: $tittle-color;
     text-align: center;
     font-size: 16px;
@@ -164,7 +164,7 @@
     }
   }
 
-  &__icon-svg {
+  &__svg {
     width: 24px;
     height: 24px;
     fill: $tittle-color;

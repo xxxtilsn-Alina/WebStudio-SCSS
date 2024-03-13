@@ -9,17 +9,7 @@
   padding: 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &__tittle {
-    color: $text-color;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
-    margin-bottom: 12px;
-  }
-
-  &__lable-text {
+  &__lable {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +24,17 @@
     }
   }
 
-  &__tittle-input {
+  &__title {
+    color: $text-color;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+  }
+
+  &__tittle {
     color: $gmail-text;
     font-size: 12px;
     font-weight: 400;
@@ -47,16 +47,16 @@
     width: 448px;
     height: 40px;
     border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid $input-color;
     margin-bottom: 10px;
     position: relative;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-left: 40px;
   }
 
-  &__input-com {
+  &__com {
     border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid $input-color;
     position: relative;
     margin-bottom: 20px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,7 +70,7 @@
     }
 
     &::placeholder {
-      color: rgba(117, 117, 117, 0.5);
+      color: $placeholder-color;
       font-family: Roboto;
       font-size: 12px;
       font-style: normal;
@@ -92,7 +92,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__close-icon {
+  &__close {
     width: 18px;
     height: 18px;
   }
@@ -101,7 +101,7 @@
     position: absolute;
     top: 14px;
     right: 14px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid $not-polite;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -110,7 +110,7 @@
     background: $tittle-color;
   }
 
-  &__lable-text-checkbox {
+  &__agreement {
     display: flex;
     gap: 9px;
     justify-content: center;
@@ -118,7 +118,7 @@
     align-items: center;
   }
 
-  &__checkbox-text {
+  &__text {
     color: $gmail-text;
     font-size: 14px;
     font-weight: 400;
@@ -126,7 +126,7 @@
     letter-spacing: 0.42px;
   }
 
-  &__text-link {
+  &__link {
     color: $hover-text;
     font-size: 14px;
     font-weight: 400;
@@ -135,7 +135,7 @@
     text-decoration-line: underline;
   }
 
-  &__input-checkbox {
+  &__checkbox {
     width: 16px;
     height: 15px;
   }
@@ -143,7 +143,7 @@
   &__button {
     border-radius: 4px;
     background: $hover-text;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px 0px $uncommon-color;
     color: $tittle-color;
     text-align: center;
     font-size: 16px;
@@ -163,7 +163,7 @@
 }
 
 .backdrop {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient($shadow-color, $shadow-color);
   position: fixed;
   top: 0;
   bottom: 0;
