@@ -9,63 +9,63 @@
     url(../img/img.biznes/biznes-fon.webp);
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-.biznes-up {
-  color: #fff;
-  text-align: center;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 60px;
-  letter-spacing: 2.64px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  animation-name: biznes-up-mowe;
-  animation-duration: 3s;
-}
-
-@keyframes biznes-up-mowe {
-  0% {
-    transform: translate(-1200px, 0) scale(0.5);
-    opacity: 0;
+  &__up {
+    color: $tittle-color;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    animation-name: biznes-up-mowe;
+    animation-duration: 3s;
   }
-  50% {
-    text-shadow: 30px -15px 3px rgb(95, 155, 83);
+
+  &__button {
+    width: 216px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: $hover-text;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background: $basis-color;
+    }
+
+    &:focus {
+      background: $basis-color;
+      outline: none;
+    }
   }
-  100% {
-    transform: translate(0, 0) scale(1);
-    opacity: 1;
+
+  &__container {
+    max-width: 628px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
 
-.button-biznes {
-  width: 216px;
-  height: 50px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-biznes:hover {
-  background: #0969b8;
-}
-
-.button-biznes:focus {
-  background: #0969b8;
-  outline: none;
-}
-
-.biznes-container {
-  max-width: 628px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  @keyframes biznes-up-mowe {
+    0% {
+      transform: translate(-1200px, 0) scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      text-shadow: 30px -15px 3px rgb(95, 155, 83);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+    }
+  }
 }

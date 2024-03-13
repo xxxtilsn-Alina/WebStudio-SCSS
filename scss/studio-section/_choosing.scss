@@ -1,94 +1,94 @@
 .choosing {
   padding-top: 94px;
-}
 
-.choosing-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  animation-name: choosing-mowe;
-  animation-duration: 3s;
-}
-
-@keyframes choosing-mowe {
-  0% {
-    transform: scale(0);
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    animation-name: choosing-mowe;
+    animation-duration: 3s;
   }
-  100% {
-    transform: scale(1);
+
+  &__item {
+    width: 270px;
+    height: 248px;
   }
-}
 
-.choosing-item {
-  width: 270px;
-  height: 248px;
-}
+  &__item-antenna::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: $before-color;
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    background-image: url(../img/img.choosing.us/choosing-us-antenna.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.choosing-item-antenna::before {
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background: #f5f4fa;
-  display: block;
-  content: "";
-  margin-bottom: 30px;
-  background-image: url(../img/img.choosing.us/choosing-us-antenna.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &__item-clock::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: $before-color;
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    background-image: url(../img/img.choosing.us/choosing-us-clock.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.choosing-item-clock::before {
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background: #f5f4fa;
-  display: block;
-  content: "";
-  margin-bottom: 30px;
-  background-image: url(../img/img.choosing.us/choosing-us-clock.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &__item-diagramma::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: $before-color;
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    background-image: url(../img/img.choosing.us/choosing-us-diagram.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.choosing-item-diagramma::before {
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background: #f5f4fa;
-  display: block;
-  content: "";
-  margin-bottom: 30px;
-  background-image: url(../img/img.choosing.us/choosing-us-diagram.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &__item-astronaut::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: $before-color;
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    background-image: url(../img/img.choosing.us/choosing-us-astronaut.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.choosing-item-astronaut::before {
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background: #f5f4fa;
-  display: block;
-  content: "";
-  margin-bottom: 30px;
-  background-image: url(../img/img.choosing.us/choosing-us-astronaut.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &__text {
+    color: $gmail-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+  }
 
-.choosing-text {
-  color: #757575;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-}
+  &__hero {
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 
-.choosing-hero {
-  color: #212121;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  @keyframes choosing-mowe {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }

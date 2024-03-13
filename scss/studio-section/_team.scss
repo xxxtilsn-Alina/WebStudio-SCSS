@@ -2,85 +2,85 @@
   background: #f5f4fa;
   padding-bottom: 94px;
   padding-top: 94px;
-}
 
-.team-title {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-}
+  &__title {
+    color: $text-color;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
 
-.team-text {
-  color: #212121;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.48px;
-  margin-bottom: 10px;
-}
+  &__text {
+    color: $text-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+  }
 
-.team-work {
-  color: #757575;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.48px;
-  margin-bottom: 16px;
-}
+  &__work {
+    color: $gmail-text;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-bottom: 16px;
+  }
 
-.team-list {
-  display: flex;
-  gap: 30px;
-}
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
 
-.team-photo {
-  margin-bottom: 30px;
-}
+  &__photo {
+    margin-bottom: 30px;
+  }
 
-.team-item {
-  padding-bottom: 30px;
-  border-radius: 0px 0px 4px 4px;
-  background: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
+  &__item {
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    background: $tittle-color;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
 
-.team-icon {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
+  &__icon {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
 
-.team-icon-svg {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: $border-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.team-icon-link {
-  border-radius: 50px;
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__icon__link {
+    border-radius: 50px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.team-icon-link:hover {
-  background-color: #2196f3;
-}
+    &:hover {
+      background-color: $hover-text;
+    }
 
-.team-icon-link:focus {
-  background-color: #2196f3;
-  outline: none;
-}
+    &:hover .team__icon-svg {
+      fill: $tittle-color;
+    }
 
-.team-icon-link:hover .team-icon-svg {
-  fill: #ffffff;
+    &:focus {
+      background-color: $hover-text;
+      outline: none;
+    }
+  }
 }
