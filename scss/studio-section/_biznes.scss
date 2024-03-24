@@ -24,19 +24,8 @@
   }
 
   &__button {
-    width: 216px;
-    height: 50px;
+    @include button();
     flex-shrink: 0;
-    border-radius: 4px;
-    background: $hover-text;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: $tittle-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       background: $basis-color;

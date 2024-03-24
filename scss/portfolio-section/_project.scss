@@ -21,11 +21,7 @@
   }
 
   &__title {
-    color: $gmail-text;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.48px;
+    @include work();
     padding-left: 24px;
   }
 
@@ -36,17 +32,6 @@
     padding-bottom: 20px;
     flex-basis: calc(100% - 240px / 9);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-      box-shadow: 1px 4px 6px 0px $infrequent-color,
-        0px 4px 4px 0px $unwonted-color, 0px 1px 1px 0px $rare-color;
-    }
-
-    &:focus {
-      outline: none;
-      box-shadow: 1px 4px 6px 0px $infrequent-color,
-        0px 4px 4px 0px $unwonted-color, 0px 1px 1px 0px $rare-color;
-    }
   }
 
   &__information {
@@ -78,6 +63,18 @@
 
   &__item {
     position: relative;
+    border: 1px solid $project-color;
+
+    &:hover {
+      box-shadow: 1px 4px 6px 0px $infrequent-color,
+        0px 4px 4px 0px $unwonted-color, 0px 1px 1px 0px $rare-color;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 1px 4px 6px 0px $infrequent-color,
+        0px 4px 4px 0px $unwonted-color, 0px 1px 1px 0px $rare-color;
+    }
 
     &:hover .project__overley {
       opacity: 1;

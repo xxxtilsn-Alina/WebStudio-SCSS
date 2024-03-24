@@ -97,11 +97,7 @@
   &__logo {
     margin-right: 93px;
     color: $logo-text;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+    @extend %logo;
     animation-name: logo-mowe;
     animation-duration: 3s;
   }
@@ -194,11 +190,7 @@
 
   &__logs {
     color: $hover-text;
-    font-size: 26px;
-    font-family: Raleway;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+    @extend %logo;
   }
 
   @keyframes logo-mowe {

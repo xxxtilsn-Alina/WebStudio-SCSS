@@ -5,21 +5,13 @@
 
   &__logo {
     color: $tittle-color;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+    @extend %logo;
     margin-bottom: 20px;
   }
 
   &__logs {
     color: $hover-text;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+    @extend %logo;
   }
 
   &__address {
@@ -80,13 +72,9 @@
   }
 
   &__link {
-    padding: 12px;
-    fill: $footer-icon-color;
-    border-radius: 50px;
+    @extend %icon-link;
     background-color: $footer-icon-color;
-    display: flex;
-    align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $footer-icon-color;
 
     &:hover {
       background-color: $hover-text;
@@ -142,22 +130,12 @@
   }
 
   &__button {
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    background: $hover-text;
-    box-shadow: 0px 4px 4px 0px $uncommon-color;
-    color: $tittle-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
+    @include button($width: 200px);
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
-    transition: background-color 300ms cubic-bezier(1, -1.07, 0.35, 0.38);
+    transition: background-color 250ms cubic-bezier(1, -1.07, 0.35, 0.38);
 
     &:hover {
       background-color: $footer-email-color;
