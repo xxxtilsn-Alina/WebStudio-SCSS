@@ -399,18 +399,27 @@ body {
   padding-top: 94px;
 }
 .choosing__list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
   animation-name: choosing-mowe;
   animation-duration: 3s;
+}
+@media screen and (min-width: 768px) {
+  .choosing__list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choosing__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 }
 .choosing__item {
   width: 270px;
   height: 248px;
 }
 .choosing__antenna::before {
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -421,8 +430,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-width: 768px) {
+  .choosing__antenna::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choosing__antenna::before {
+    width: 270px;
+  }
+}
 .choosing__clock::before {
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -433,8 +452,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-width: 768px) {
+  .choosing__clock::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choosing__clock::before {
+    width: 270px;
+  }
+}
 .choosing__diagramma::before {
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -445,8 +474,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-width: 768px) {
+  .choosing__diagramma::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choosing__diagramma::before {
+    width: 270px;
+  }
+}
 .choosing__astronaut::before {
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -456,6 +495,16 @@ body {
   background-image: url(../img/img.choosing.us/choosing-us-astronaut.webp);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .choosing__astronaut::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choosing__astronaut::before {
+    width: 270px;
+  }
 }
 .choosing__text {
   color: #757575;
@@ -479,6 +528,19 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+.choosing__container {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .choosing__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choosing__container {
+    width: 1200px;
   }
 }
 

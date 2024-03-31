@@ -2,11 +2,18 @@
   padding-top: 94px;
 
   &__list {
-    display: flex;
-    align-items: center;
-    gap: 30px;
     animation-name: choosing-mowe;
     animation-duration: 3s;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
   }
 
   &__item {
@@ -15,7 +22,7 @@
   }
 
   &__antenna::before {
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background: $before-color;
@@ -25,10 +32,18 @@
     background-image: url(../img/img.choosing.us/choosing-us-antenna.webp);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__clock::before {
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background: $before-color;
@@ -38,10 +53,18 @@
     background-image: url(../img/img.choosing.us/choosing-us-clock.webp);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__diagramma::before {
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background: $before-color;
@@ -51,10 +74,18 @@
     background-image: url(../img/img.choosing.us/choosing-us-diagram.webp);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__astronaut::before {
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background: $before-color;
@@ -64,6 +95,14 @@
     background-image: url(../img/img.choosing.us/choosing-us-astronaut.webp);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__text {
@@ -85,6 +124,18 @@
     }
     100% {
       transform: scale(1);
+    }
+  }
+
+  &__container {
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
     }
   }
 }
