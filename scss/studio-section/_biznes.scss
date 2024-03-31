@@ -9,18 +9,25 @@
     url(../img/img.biznes/biznes-fon.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   &__up {
     color: $tittle-color;
     text-align: center;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 60px;
-    letter-spacing: 2.64px;
+    line-height: 42px;
+    letter-spacing: 1.56px;
     text-transform: uppercase;
     margin-bottom: 30px;
     animation-name: biznes-up-mowe;
     animation-duration: 3s;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      letter-spacing: 2.64px;
+      line-height: 60px;
+    }
   }
 
   &__button {
@@ -35,13 +42,21 @@
       background: $basis-color;
       outline: none;
     }
+
+    @media screen and (min-width: 1200px) {
+      width: 216px;
+    }
   }
 
   &__container {
-    max-width: 628px;
+    max-width: 360px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+    }
   }
 
   @keyframes biznes-up-mowe {

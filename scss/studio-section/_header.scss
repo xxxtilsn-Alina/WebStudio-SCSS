@@ -1,18 +1,29 @@
 .header {
   &__container {
     display: flex;
-    margin-right: auto;
+    justify-content: space-between;
     margin-left: auto;
+    margin-right: auto;
     align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    display: none;
     margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      justify-content: space-between;
+    }
   }
 
   &__link {
@@ -103,8 +114,29 @@
   }
 
   &__information {
-    display: flex;
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__menu {
+    width: 40px;
+    height: 40px;
+    display: inline;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 
   &__gmail {
@@ -116,6 +148,16 @@
     letter-spacing: 0.28px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      letter-spacing: 0.24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      letter-spacing: 0.28px;
+    }
   }
 
   &__icon {
@@ -124,6 +166,18 @@
     height: 12px;
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      width: 14px;
+      height: 10px;
+      margin-right: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
   }
 
   &__item {
@@ -186,6 +240,16 @@
     height: 16px;
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      height: 14px;
+      margin-right: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 16px;
+      margin-right: 10px;
+    }
   }
 
   &__logs {
