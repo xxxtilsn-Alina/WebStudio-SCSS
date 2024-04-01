@@ -1,11 +1,22 @@
 .team {
   background: $section-color;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     @extend %tittle-text;
     line-height: normal;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+      letter-spacing: 1.08px;
+    }
   }
 
   &__text {
@@ -22,19 +33,52 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 30px;
+      flex-direction: row;
+    }
   }
 
   &__photo {
     margin-bottom: 30px;
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__item {
     padding-bottom: 30px;
+    width: 450px;
     border-radius: 0px 0px 4px 4px;
     background: $tittle-color;
     box-shadow: 0px 2px 1px 0px $shadow-color, 0px 1px 1px 0px $uncommon-color,
       0px 1px 3px 0px $rare-color;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__box {

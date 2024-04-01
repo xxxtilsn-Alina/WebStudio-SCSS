@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  max-width: 490px;
+  max-width: 480px;
   display: flex;
   margin-right: auto;
   margin-left: auto;
