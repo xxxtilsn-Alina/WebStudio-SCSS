@@ -53,10 +53,16 @@ body {
 }
 
 .container {
-  max-width: 480px;
+  max-width: 320px;
   display: flex;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -317,12 +323,18 @@ body {
 }
 
 .biznes {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.3673844538) 100%), url(../img/img.biznes/biznes-fon.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (min-width: 1200px) {
+  .biznes {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .biznes__up {
   color: #fff;
@@ -400,6 +412,8 @@ body {
   padding-bottom: 60px;
 }
 .choosing__list {
+  margin-right: auto;
+  margin-left: auto;
   animation-name: choosing-mowe;
   animation-duration: 3s;
 }
@@ -407,6 +421,7 @@ body {
   .choosing__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -419,8 +434,13 @@ body {
   }
 }
 .choosing__item {
-  width: 450px;
+  width: 290px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .choosing__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .choosing__item {
@@ -436,7 +456,7 @@ body {
   }
 }
 .choosing__antenna::before {
-  width: 450px;
+  width: 290px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -446,6 +466,11 @@ body {
   background-image: url(../img/img.choosing.us/choosing-us-antenna.webp);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 480px) {
+  .choosing__antenna::before {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .choosing__antenna::before {
@@ -458,7 +483,7 @@ body {
   }
 }
 .choosing__clock::before {
-  width: 450px;
+  width: 290px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -468,6 +493,11 @@ body {
   background-image: url(../img/img.choosing.us/choosing-us-clock.webp);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 480px) {
+  .choosing__clock::before {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .choosing__clock::before {
@@ -480,7 +510,7 @@ body {
   }
 }
 .choosing__diagramma::before {
-  width: 450px;
+  width: 290px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -490,6 +520,11 @@ body {
   background-image: url(../img/img.choosing.us/choosing-us-diagram.webp);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 480px) {
+  .choosing__diagramma::before {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .choosing__diagramma::before {
@@ -502,7 +537,7 @@ body {
   }
 }
 .choosing__astronaut::before {
-  width: 450px;
+  width: 290px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -512,6 +547,11 @@ body {
   background-image: url(../img/img.choosing.us/choosing-us-astronaut.webp);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 480px) {
+  .choosing__astronaut::before {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .choosing__astronaut::before {
@@ -553,6 +593,10 @@ body {
   100% {
     transform: scale(1);
   }
+}
+.choosing__container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .work {
@@ -652,7 +696,12 @@ body {
 }
 .team__photo {
   margin-bottom: 30px;
-  width: 450px;
+  width: 290px;
+}
+@media screen and (min-width: 480px) {
+  .team__photo {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__photo {
@@ -666,10 +715,15 @@ body {
 }
 .team__item {
   padding-bottom: 30px;
-  width: 450px;
+  width: 290px;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 480px) {
+  .team__item {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -701,6 +755,10 @@ body {
 .team__icon:focus {
   background-color: #2196f3;
   outline: none;
+}
+.team__container {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .clients {
@@ -807,6 +865,10 @@ body {
   .footer__tablet {
     margin-bottom: 0;
   }
+}
+.footer__container {
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -932,7 +994,7 @@ body {
   }
 }
 .footer__input {
-  width: 450px;
+  width: 290px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -940,6 +1002,11 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
   position: relative;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {
