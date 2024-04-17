@@ -62,13 +62,14 @@ body {
 
 .header__container {
   display: flex;
-  margin-right: auto;
+  justify-content: space-between;
   margin-left: auto;
+  margin-right: auto;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header__container {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -76,13 +77,14 @@ body {
 }
 .header__list {
   display: none;
-  gap: 50px;
   margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .header__list {
     display: flex;
     align-items: center;
+    gap: 50px;
+    justify-content: space-between;
   }
 }
 .header__link {
@@ -101,11 +103,11 @@ body {
   color: #2196f3;
   outline: none;
 }
-.header__portfolio::before {
+.header__studio::before {
   content: "";
   border-radius: 2px;
   background-color: #2196f3;
-  width: 74px;
+  width: 48px;
   height: 4px;
   display: block;
   position: absolute;
@@ -160,10 +162,31 @@ body {
   animation-name: logo-mowe;
   animation-duration: 3s;
 }
+.header__information {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .header__logo {
-    font-size: 26px;
-    letter-spacing: 0.78px;
+  .header__information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.header__menu {
+  width: 40px;
+  height: 40px;
+  display: inline;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
   }
 }
 .header__gmail {
@@ -194,6 +217,20 @@ body {
   height: 12px;
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .header__icon {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 .header__item {
   display: flex;
@@ -244,14 +281,20 @@ body {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__logs {
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .header__telephone {
+    height: 14px;
+    margin-right: 8px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .header__logs {
-    font-size: 26px;
-    letter-spacing: 0.78px;
+  .header__telephone {
+    height: 16px;
+    margin-right: 10px;
   }
+}
+.header__logs {
+  color: #2196f3;
 }
 @keyframes logo-mowe {
   0% {
@@ -269,9 +312,16 @@ body {
 }
 .button__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   animation-name: btn-mowe;
   animation-duration: 2s;
+}
+@media screen and (min-width: 768px) {
+  .button__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .button__container {
   margin-left: auto;
@@ -286,8 +336,8 @@ body {
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.48px;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding-left: 22px;
+  padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -315,8 +365,19 @@ body {
 }
 
 .project {
-  padding-top: 50px;
-  padding-bottom: 94px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    padding-top: 50px;
+    padding-bottom: 94px;
+  }
 }
 .project__list {
   display: flex;
@@ -345,10 +406,20 @@ body {
 .project__link {
   display: block;
   border: 1px solid #fff;
-  max-width: 370px;
+  max-width: 450px;
   padding-bottom: 20px;
   flex-basis: calc(100% - 26.6666666667px);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .project__link {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__link {
+    max-width: 370px;
+  }
 }
 .project__information {
   width: 325px;
@@ -399,21 +470,76 @@ body {
   color: #fff;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+  }
+}
 .footer__logs {
   color: #2196f3;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logs {
+    font-size: 26px;
+  }
+}
 .footer__address {
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   font-style: normal;
   letter-spacing: 0.42px;
   margin-bottom: 9px;
 }
-.footer__container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-bottom: 8px;
+  }
+}
+.footer__tablet {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__tablet {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+  }
+}
+.footer__wrapper {
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    margin-bottom: 0;
+    margin-right: 198px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    text-align: start;
+    margin-right: 0;
+  }
 }
 .footer__gmails {
   color: rgba(255, 255, 255, 0.6);
@@ -435,9 +561,23 @@ body {
 .footer__burnt {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
+  text-align: center;
+  margin-bottom: 60px;
 }
-.footer__tittle {
+@media screen and (min-width: 768px) {
+  .footer__burnt {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__burnt {
+    text-align: start;
+    margin-left: 70px;
+  }
+}
+.footer__project {
   color: #fff;
   font-size: 14px;
   font-style: normal;
@@ -450,10 +590,11 @@ body {
 .footer__information {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 .footer__link {
-  fill: rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 0.1);
 }
 .footer__link:hover {
   background-color: #2196f3;
@@ -468,11 +609,17 @@ body {
   fill: #fff;
 }
 .footer__lable {
-  display: flex;
-  gap: 12px;
-  margin-left: 93px;
+  display: block;
 }
-.footer__info {
+@media screen and (min-width: 1200px) {
+  .footer__lable {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-left: 93px;
+  }
+}
+.footer__tittle {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -480,16 +627,29 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 93px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__tittle {
+    text-align: start;
+    margin-left: 93px;
+  }
 }
 .footer__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
   position: relative;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 .footer__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -514,18 +674,26 @@ body {
   height: 50px;
   border-radius: 4px;
   background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.14);
   color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: center;
-  transition: background-color 300ms cubic-bezier(1, -1.07, 0.35, 0.38);
+  transition: background-color 250ms cubic-bezier(1, -1.07, 0.35, 0.38);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    margin: 0;
+  }
 }
 .footer__button:hover {
   background-color: #0f68b1;

@@ -3,9 +3,15 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     animation-name: btn-mowe;
     animation-duration: 2s;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
   }
 
   &__container {
@@ -22,8 +28,8 @@
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0.48px;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 22px;
+    padding-right: 22px;
     padding-top: 6px;
     padding-bottom: 6px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),

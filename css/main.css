@@ -766,21 +766,76 @@ body {
   color: #fff;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+  }
+}
 .footer__logs {
   color: #2196f3;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logs {
+    font-size: 26px;
+  }
+}
 .footer__address {
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   font-style: normal;
   letter-spacing: 0.42px;
   margin-bottom: 9px;
 }
-.footer__container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-bottom: 8px;
+  }
+}
+.footer__tablet {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__tablet {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+  }
+}
+.footer__wrapper {
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    margin-bottom: 0;
+    margin-right: 198px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    text-align: start;
+    margin-right: 0;
+  }
 }
 .footer__gmails {
   color: rgba(255, 255, 255, 0.6);
@@ -802,7 +857,21 @@ body {
 .footer__burnt {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__burnt {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__burnt {
+    text-align: start;
+    margin-left: 70px;
+  }
 }
 .footer__project {
   color: #fff;
@@ -817,6 +886,7 @@ body {
 .footer__information {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 .footer__link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -835,9 +905,15 @@ body {
   fill: #fff;
 }
 .footer__lable {
-  display: flex;
-  gap: 12px;
-  margin-left: 93px;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer__lable {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-left: 93px;
+  }
 }
 .footer__tittle {
   color: #fff;
@@ -847,16 +923,29 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 93px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__tittle {
+    text-align: start;
+    margin-left: 93px;
+  }
 }
 .footer__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
   position: relative;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 .footer__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -894,6 +983,13 @@ body {
   gap: 10px;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(1, -1.07, 0.35, 0.38);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    margin: 0;
+  }
 }
 .footer__button:hover {
   background-color: #0f68b1;
