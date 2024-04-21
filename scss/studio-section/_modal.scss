@@ -1,13 +1,24 @@
 .modal {
   background: $tittle-color;
-  width: 528px;
-  height: 581px;
+  width: 260px;
+  height: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(360deg);
-  padding: 40px;
+  padding: 25px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 
   &__lable {
     display: flex;
@@ -36,15 +47,19 @@
 
   &__tittle {
     color: $gmail-text;
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
     margin-bottom: 4px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+    }
   }
 
   &__input {
-    width: 448px;
+    width: 210px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid $input-color;
@@ -52,6 +67,14 @@
     position: relative;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-left: 40px;
+
+    @media screen and (min-width: 480px) {
+      width: 370px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 448px;
+    }
   }
 
   &__com {
@@ -62,8 +85,16 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-left: 16px;
     padding-bottom: 85px;
-    width: 448px;
-    height: 120px;
+    width: 210px;
+    height: 90px;
+
+    @media screen and (min-width: 480px) {
+      width: 370px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 448px;
+    }
 
     &:hover {
       border: 1px solid $hover-text;
@@ -72,7 +103,7 @@
     &::placeholder {
       color: $placeholder-color;
       font-family: Roboto;
-      font-size: 12px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -80,6 +111,10 @@
       padding-bottom: 87px;
       position: absolute;
       top: 12px;
+
+      @media screen and (min-width: 480px) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -93,21 +128,37 @@
   }
 
   &__close {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
+
+    @media screen and (min-width: 480px) {
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      fill: $hover-text;
+      transition: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 
   &__btn {
     position: absolute;
-    top: 14px;
-    right: 14px;
+    top: 5px;
+    right: 5px;
     border: 1px solid $not-polite;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6px;
+    padding: 4px;
     background: $tittle-color;
+
+    @media screen and (min-width: 480px) {
+      padding: 6px;
+      top: 14px;
+      right: 14px;
+    }
   }
 
   &__agreement {
@@ -120,19 +171,36 @@
 
   &__text {
     color: $gmail-text;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 
   &__link {
     color: $hover-text;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.42px;
+    letter-spacing: 0.34px;
     text-decoration-line: underline;
+
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+      letter-spacing: 0.36px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      letter-spacing: 0.42px;
+    }
   }
 
   &__checkbox {
@@ -146,11 +214,11 @@
     box-shadow: 0px 4px 4px 0px $uncommon-color;
     color: $tittle-color;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
-    padding: 10px 52px 10px 52px;
+    padding: 7px 47px 7px 47px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -158,6 +226,11 @@
 
     &:hover {
       background-color: $basis-color;
+    }
+
+    @media screen and (min-width: 480px) {
+      padding: 10px 52px 10px 52px;
+      font-size: 16px;
     }
   }
 }

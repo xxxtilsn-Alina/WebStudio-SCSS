@@ -37,44 +37,44 @@
   &__link {
     display: block;
     border: 1px solid $tittle-color;
-    max-width: 290px;
+    width: 290px;
     padding-bottom: 20px;
     flex-basis: calc(100% - 240px / 9);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 480px) {
-      max-width: 450px;
+      width: 450px;
     }
 
     @media screen and (min-width: 768px) {
-      max-width: 354px;
+      width: 354px;
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: 370px;
+      width: 370px;
     }
   }
 
   &__catalog {
-    max-width: 290px;
+    width: 290px;
 
     @media screen and (min-width: 480px) {
-      max-width: 450px;
+      width: 450px;
     }
 
     @media screen and (min-width: 768px) {
-      max-width: 354px;
+      width: 354px;
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: 370px;
+      width: 370px;
     }
   }
 
   &__information {
     width: 290px;
     color: $tittle-color;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.54px;
@@ -83,7 +83,7 @@
 
     @media screen and (min-width: 480px) {
       width: 402px;
-      height: 280px;
+      font-size: 18px;
     }
 
     @media screen and (min-width: 768px) {
@@ -91,13 +91,13 @@
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: 325px;
+      width: 322px;
     }
   }
 
   &__overley {
     width: 290px;
-    height: 294px;
+    height: 232px;
     background-color: $overley-fon;
     position: absolute;
     z-index: 2;
@@ -111,15 +111,17 @@
     transform: translatey(100%);
 
     @media screen and (min-width: 480px) {
-      max-width: 450px;
+      width: 450px;
+      height: 360px;
     }
 
     @media screen and (min-width: 768px) {
-      max-width: 354px;
+      width: 354px;
+      height: 294px;
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: 370px;
+      width: 370px;
     }
   }
 
@@ -141,6 +143,18 @@
     &:hover .project__overley {
       opacity: 1;
       transform: translatey(0);
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
     }
   }
 }
