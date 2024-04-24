@@ -1,18 +1,17 @@
 .modal {
   background: $tittle-color;
-  width: 260px;
+  width: 290px;
   height: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(360deg);
-  padding: 25px;
+  padding: 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
-    padding: 40px;
   }
 
   @media screen and (min-width: 1200px) {
