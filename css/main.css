@@ -333,7 +333,7 @@ body {
 .biznes {
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.3673844538) 100%), url(../img/img.biznes/biznes-fon.webp), url(../../img/mobile/biznes-fon-mobile@1x.webp);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.3673844538) 100%), url(../../img/mobile/biznes-fon-mobile@1x.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
