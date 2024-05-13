@@ -114,7 +114,7 @@
         </div>
       </section>
       <!-- work -->
-      <!-- <section class="work">
+      <section class="work">
         <div class="container">
           <div class="work__container">
             <h2 data-aos="zoom-in" data-aos-duration="3000" class="work__title">
@@ -122,31 +122,58 @@
             </h2>
             <ul data-aos="zoom-in" data-aos-duration="3000" class="work__list">
               <li class="work__item">
-                <img
-                  class="work__img"
-                  src="./img/img.work/work-programming.jpg"
-                  alt="work"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/desktop/work-programming-desktop@1x.webp 1x,
+                      ./img/desktop/work-programming-desktop@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="work__img"
+                    src="./img/img.work/work-programming.jpg"
+                    alt="work"
+                  />
+                </picture>
                 <div class="work__text">
                   <h3 class="work__tittle">Десктопні додатки</h3>
                 </div>
               </li>
               <li class="work__item">
-                <img
-                  src="./img/img.work/work-site.jpg"
-                  alt="work"
-                  class="work__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/desktop/work-site-desktop@1x.webp 1x,
+                      ./img/desktop/work-site-desktop@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/img.work/work-site.jpg"
+                    alt="work"
+                    class="work__img"
+                  />
+                </picture>
                 <div class="work__text">
                   <h3 class="work__tittle">Мобільні додатки</h3>
                 </div>
               </li>
               <li class="work__item">
-                <img
-                  src="./img/img.work/work-drawing.png"
-                  alt="work"
-                  class="work__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/desktop/work-drawing-desktop@1x.webp 1x,
+                      ./img/desktop/work-drawing-desktop@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/img.work/work-drawing.png"
+                    alt="work"
+                    class="work__img"
+                  />
+                </picture>
                 <div class="work__text">
                   <h3 class="work__tittle">Дизайнерські рішення</h3>
                 </div>
@@ -154,7 +181,7 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- team -->
       <section class="team">
         <div class="container">
@@ -162,11 +189,41 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
               <li class="team__item">
-                <img
-                  src="./img/img.team/team-desinger.webp"
-                  alt="Designer"
-                  class="team__photo"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/desktop/team-desinger-desktop@1x.webp 1x,
+                      ./img/desktop/team-desinger-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/tablet/team-desinger-tablet@1x.webp 1x,
+                      ./img/tablet/team-desinger-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./img/mobile/team-desinger-mobile@1x.webp 1x,
+                      ./img/mobile/team-desinger-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/mobile/team-desinger-mobile@1x.webp 1x,
+                      ./img/mobile/team-desinger-mobile@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/img.team/team-desinger.webp"
+                    alt="Designer"
+                    class="team__photo"
+                  />
+                </picture>
                 <h3 class="team__text">Ігор Дем'яненко</h3>
                 <p class="team__work">Product Designer</p>
                 <div class="team__box">
@@ -193,11 +250,41 @@
                 </div>
               </li>
               <li class="team__item">
-                <img
-                  src="./img/img.team/team-developer.webp"
-                  alt="Developer"
-                  class="team__photo"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/desktop/team-developer-desktop@1x.webp 1x,
+                      ./img/desktop/team-developer-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/tablet/team-developer-tablet@1x.webp 1x,
+                      ./img/tablet/team-developer-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./img/mobile/team-developer-mobile@1x.webp 1x,
+                      ./img/mobile/team-developer-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/mobile/team-developer-mobile@1x.webp 1x,
+                      ./img/mobile/team-developer-mobile@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/img.team/team-developer.webp"
+                    alt="Developer"
+                    class="team__photo"
+                  />
+                </picture>
                 <h3 class="team__text">Ольга Рєпіна</h3>
                 <p class="team__work">Frontend Developer</p>
                 <div class="team__box">
@@ -224,11 +311,41 @@
                 </div>
               </li>
               <li class="team__item">
-                <img
-                  src="./img/img.team/team-marketing.webp"
-                  alt="Marketing"
-                  class="team__photo"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/desktop/team-marketing-desktop@1x.webp 1x,
+                      ./img/desktop/team-marketing-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/tablet/team-marketing-tablet@1x.webp 1x,
+                      ./img/tablet/team-marketing-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./img/mobile/team-marketing-mobile@1x.webp 1x,
+                      ./img/mobile/team-marketing-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/mobile/team-marketing-mobile@1x.webp 1x,
+                      ./img/mobile/team-marketing-mobile@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/img.team/team-marketing.webp"
+                    alt="Marketing"
+                    class="team__photo"
+                  />
+                </picture>
                 <h3 class="team__text">Микола Тарасов</h3>
                 <p class="team__work">Marketing</p>
                 <div class="team__box">
@@ -255,11 +372,41 @@
                 </div>
               </li>
               <li class="team__item">
-                <img
-                  src="./img/img.team/team-ui-desinger.webp"
-                  alt="Designer"
-                  class="team__photo"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/desktop/team-ui-desinger-desktop@1x.webp 1x,
+                      ./img/desktop/team-ui-desinger-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/tablet/team-ui-desinger-tablet@1x.webp 1x,
+                      ./img/tablet/team-ui-desinger-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./img/mobile/team-ui-desinger-mobile@1x.webp 1x,
+                      ./img/mobile/team-ui-desinger-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/mobile/team-ui-desinger-mobile@1x.webp 1x,
+                      ./img/mobile/team-ui-desinger-mobile@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/img.team/team-ui-desinger.webp"
+                    alt="Designer"
+                    class="team__photo"
+                  />
+                </picture>
                 <h3 class="team__text">Михайло Єрмаков</h3>
                 <p class="team__work">UI Designer</p>
                 <div class="team__box">
@@ -367,7 +514,7 @@
                   >
                 </li>
                 <li class="footer__contact">
-                  <a href="tel: +380961111111" class="footer__nomer"
+                  <a href="tel:+380961111111" class="footer__nomer"
                     >+38 096 111 11 11</a
                   >
                 </li>

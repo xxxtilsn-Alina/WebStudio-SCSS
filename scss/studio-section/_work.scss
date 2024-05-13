@@ -1,6 +1,11 @@
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 
   &__title {
     @extend %tittle-text;

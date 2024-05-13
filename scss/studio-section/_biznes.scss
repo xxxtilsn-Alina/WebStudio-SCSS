@@ -6,14 +6,38 @@
       rgba(47, 48, 58, 0.4) 40%,
       rgba(47, 48, 58, 0.36738445378151263) 100%
     ),
-    url(../img/img.biznes/biznes-fon.webp);
+    url(../img/img.biznes/biznes-fon.webp),
+    url(../../img/mobile/biznes-fon-mobile@1x.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../img/mobile/biznes-fon-mobile@2x.webp);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../../img/tablet/biznes-fon-tablet@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../img/tablet/biznes-fon-tablet@2x.webp);
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(../../img/desktop/biznes-fon-desktop@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../img/desktop/biznes-fon-desktop@2x.webp);
+    }
   }
 
   &__up {
