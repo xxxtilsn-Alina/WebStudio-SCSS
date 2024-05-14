@@ -6,7 +6,7 @@
   background-position: center;
   background-image: url("../../img/mobile/biznes-fon-mobile@1x.webp");
 
-  @media (min-device-pixel-ratio: 2),
+  @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url("../../img/mobile/biznes-fon-mobile@2x.webp");
@@ -15,7 +15,7 @@
   @media screen and (min-width: 768px) {
     background-image: url("../../img/tablet/biznes-fon-tablet@1x.webp");
 
-    @media (min-device-pixel-ratio: 2),
+    @media (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url("../../img/tablet/biznes-fon-tablet@2x.webp");
@@ -27,7 +27,7 @@
     padding-bottom: 200px;
     background-image: url("../../img/desktop/biznes-fon-desktop@1x.webp");
 
-    @media (min-device-pixel-ratio: 2),
+    @media (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url("../../img/desktop/biznes-fon-desktop@2x.webp");
