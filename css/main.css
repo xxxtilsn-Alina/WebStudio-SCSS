@@ -336,11 +336,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("../../img/mobile/biznes-fon-mobile@1x.webp");
+  background-image: url(../../img/mobile/biznes-fon-mobile@1x.webp);
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .biznes {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobile/biznes-fon-mobile@2x.webp);
+    background-image: url(../../img/mobile/biznes-fon-mobile@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
@@ -348,9 +348,9 @@ body {
     background-image: url(../../img/tablet/biznes-fon-tablet@1x.webp);
   }
 }
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .biznes {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tablet/biznes-fon-tablet@2x.webp);
+    background-image: url(../../img/tablet/biznes-fon-tablet@2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -360,9 +360,9 @@ body {
     background-image: url(../../img/desktop/biznes-fon-desktop@1x.webp);
   }
 }
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .biznes {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/desktop/biznes-fon-desktop@2x.webp);
+    background-image: url(../../img/desktop/biznes-fon-desktop@2x.webp);
   }
 }
 .biznes__up {
